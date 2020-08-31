@@ -1,0 +1,17 @@
+{
+    "Arturs-Maculevics": {
+        "Rezervacijas": {
+            "42": {
+                "beigas": "02-02-2019",
+                "kopsumma": 20,
+                "nr": "42",
+                "numurins": "1",
+                "saisinajums": "LV",
+                "sakums": "01-02-2019",
+                "valsts": "latvia",
+                "viesnica": "asdads",
+                "zvaigznes": "4"
+            }
+        }
+    }
+}

@@ -1,0 +1,59 @@
+{
+    "latvia": {
+        "Max-Viesnicas": 2,
+        "Saisinajums": "LV",
+        "Viesnicas": {
+            "asdads": {
+                "Viesnicas-cena-par-numurinu": 50,
+                "Viesnicas-nosaukums": "asdads",
+                "Viesnicas-numurini": {
+                    "1": {
+                        "Rezervets": true,
+                        "Rezervets-LIDZ": "02-02-2019",
+                        "Rezervets-NO": "01-02-2019"
+                    },
+                    "2": {
+                        "Rezervets": false,
+                        "Rezervets-LIDZ": "",
+                        "Rezervets-NO": ""
+                    }
+                },
+                "Viesnicas-numurinu-skaits": "2",
+                "Viesnicas-zvaigznes": "4"
+            },
+            "hotelred": {
+                "Viesnicas-cena-par-numurinu": 50,
+                "Viesnicas-nosaukums": "hotelred",
+                "Viesnicas-numurini": {
+                    "1": {
+                        "Rezervets": false,
+                        "Rezervets-LIDZ": "",
+                        "Rezervets-NO": ""
+                    },
+                    "2": {
+                        "Rezervets": false,
+                        "Rezervets-LIDZ": "",
+                        "Rezervets-NO": ""
+                    },
+                    "3": {
+                        "Rezervets": false,
+                        "Rezervets-LIDZ": "",
+                        "Rezervets-NO": ""
+                    },
+                    "4": {
+                        "Rezervets": false,
+                        "Rezervets-LIDZ": "",
+                        "Rezervets-NO": ""
+                    },
+                    "5": {
+                        "Rezervets": false,
+                        "Rezervets-LIDZ": "",
+                        "Rezervets-NO": ""
+                    }
+                },
+                "Viesnicas-numurinu-skaits": "5",
+                "Viesnicas-zvaigznes": "hotelBlue"
+            }
+        }
+    }
+}

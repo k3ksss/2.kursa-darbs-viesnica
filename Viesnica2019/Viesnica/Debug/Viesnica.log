@@ -1,0 +1,4 @@
+﻿  funkcijas.cpp
+d:\viesnica2019\viesnica\funkcijas.cpp(8): warning C4018: '<': signed/unsigned mismatch
+d:\viesnica2019\viesnica\funkcijas.cpp(48): warning C4018: '<': signed/unsigned mismatch
+  Viesnica.vcxproj -> D:\Viesnica2019\Debug\Viesnica.exe

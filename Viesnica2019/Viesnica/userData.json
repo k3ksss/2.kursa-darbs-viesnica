@@ -1,0 +1,50 @@
+{
+    "admin": {
+        "E-Pasts": "arturs@gmail.com",
+        "Parole": "admin",
+        "Uzvards": "Maculevics",
+        "Valsts": "Latvia",
+        "Vards": "Arturs",
+        "admin": true
+    },
+    "asd@gmail.com": {
+        "E-Pasts": "asd@gmail.com",
+        "Parole": "asd",
+        "Uzvards": "Asd",
+        "Valsts": "asd",
+        "Vards": "Asd",
+        "admin": false
+    },
+    "k3k@gmail.com": {
+        "E-Pasts": "k3k@gmail.com",
+        "Parole": "parole",
+        "Uzvards": "Maculevics",
+        "Valsts": "Latvia",
+        "Vards": "Arturs",
+        "admin": false
+    },
+    "k3ksss@gmail.com": {
+        "E-Pasts": "k3ksss@gmail.com",
+        "Parole": "parole",
+        "Uzvards": "Maculevics",
+        "Valsts": "Latvia",
+        "Vards": "Arturs ",
+        "admin": false
+    },
+    "reinis@inbox.lv": {
+        "E-Pasts": "reinis@inbox.lv",
+        "Parole": "parole1234",
+        "Uzvards": "Dubovs",
+        "Valsts": "Russia",
+        "Vards": "Reinis",
+        "admin": false
+    },
+    "user": {
+        "E-Pasts": "Markuss@gmail.com",
+        "Parole": "user",
+        "Uzvards": "Brikamnis",
+        "Valsts": "Igaunija",
+        "Vards": "Markuss",
+        "admin": false
+    }
+}
