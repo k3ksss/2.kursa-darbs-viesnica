@@ -1,0 +1,196 @@
+PSEUDO KODS
+
+1. MENU - STARTUP
+	1.1. Tiek izvadits pazinojums "Sveicinati"
+	
+2. MENU - LOGIN
+	2.1. Izvada darbibas iespejas
+	2.2. Jaievada ciparu, kuru darbibu velies
+	2.3. Tiek veikta parbaude vai ievaditais cipars nav arpus diapzona [1-3]
+		TRUE: 
+			1.Tiks atverts registracijas menu
+				*Tiek pieprasitas ievades:
+					-VARDS, UZVARDS
+					-PAROLE, ATKARTOTA PAROLE
+					-E-PASTS
+					-VASTS
+				*Visi dati tiek saglabati datubaze un aplikacija turpina darbu
+			2.Tiks atverts ielogosanas menu
+				*Tiek pieprasitas ievades:
+					-E-PASTS
+					-PAROLE
+				*Tiek parbudits vai e-pasts un parole sakrit ar kadu no datubaze
+					TRUE: Programma atver (MENU 5)
+					FALSE:
+						pieprasa ievadit velreiz 
+						izmet Error 'E-pasts vai parole ir ievadīta nepareizi, lūdzu mēģiniet velreiz'
+					
+			3.Aplikacija aizveras
+		FALSE: 
+			Ievade jaatkarto, kamer ieklaujas diapzona
+			
+
+4. MENU - ADMIN MENU
+	4.1. Tiek izvaditas darbibas iespejas
+	4.2. Jaievada ciparu, kuru darbibu velies
+	4.3. Tiek veikta parbaude vai ievaditais cipars nav arpus diapzona [1-3]
+		TRUE: 
+			1.Atver pievienot valsts 1paneli 
+				1.1. Jaievada nosaukums
+				1.2. Jaievada saisinājums
+				1.3. Jaievada maksimālais viesnīcu skaits 
+				1.4. Kad dati ir ievaditi tos registrejam datubaze
+				1.5. Atver viesnicas pievienosanu for cikla, for cikls darbojas kamer ir ievaditas maksimālais viesnicas skaits
+					1.5.1. Jaievada viesnicas nosaukums
+					1.5.2. Jaievada viesnicas zvaigznu skaits
+					1.5.3. Jaievada viesnicas cena par numurinu
+					1.5.4. Viss tiek saglabats datubaze
+					1.5.4. Aplikacija atver (MENU 4)
+			2.Atver labot valstis
+				2.1. Tiek izvadita katra valsts
+				2.2. Jaievada valsts, kuras info velies labot
+				2.3. Pieprasa ievadit darbibas ciparu
+				2.4. Parbauda vai ir diapzona [1-UNLIMITED]
+						TRUE:
+							2.4.1. Teik pieprasits ievadit jauno informaciju
+										-JAUNU NOSAUKUMU
+										-JAUNU SAISINAJUMU
+										-JAUNU MAKSIMALO VIESNICU SKAITS
+							2.4.2. Jaunie ievaditie dati tiek saglabati datubaze virsu esosajiem
+							2.4.3. Aplikacija atver (MENU 4)
+						FALSE:
+						2.4.4. Pieprasa ievadit jaunu darbibu, kamer ir pareizi
+			3.Atver dzest valsti
+				3.1. Tiek izvaditas visas sistema registretas valstis 
+				3.2. Jaievada ciparu, kuru valsti velies
+				3.3. Tiek veikta parbaude vai ievaditais cipars nav arpus diapzona [1-3]
+					TRUE: 
+						3.3.1. Piedava dzest valsti
+						3.3.2. Jaievada darbiba
+						3.3.3. Parbauda vai darbiba ir vienad ar Y
+								TRUE:
+									3.3.3.1. Valsts tiek dzesta no datubazes un atveras (Menu 4)
+								FALSE:
+									3.3.3.2.Parbauda vai ir vienads ar N
+												TRUE:
+													3.3.3.2.1. Valsts neidzesas un atveras (Menu 4)
+												FALSE:
+													3.3.3.2.2. Pieprasa ievadit isto burtu
+					FALSE: 
+						Ievade jaatkarto, kamer ieklaujas diapzona		
+			4.Atpakaļ un izvēlini kurā var ielogoties un reģistrēties sistēma
+	
+
+5. - MENU // USER MAIN MENU 
+	5.1. Tiek izvaditas darbibu izveles
+	5.2. Jaievada ciparu, kuru darbibu velies
+	5.3. Tiek veikta parbaude vai ievaditais cipars nav arpus diapzona [1-3]
+		TRUE: 
+			1. Tiek atverts (Menu 6)
+			2. Tiek atverts (Menu 7)
+			3. Tiek atverts (Menu 12)
+			4. Aplikacija aizveras
+		FALSE: 1
+			Ievade jaatkarto, kamer ieklaujas diapzona	
+
+	
+6. - MENU // USER MAIN SEARCH HOTEL
+	6.1. Tiek izvaditas darbibu izveles
+	6.2. Jaievada ciparu, kuru darbibu velies
+	6.3. Tiek veikta parbaude vai ievaditais cipars nav arpus diapzona [1-3]
+		TRUE: 
+			1. Tiek atverts (Menu 6)
+			2. Tiek atverts (Menu 7)
+			3. Tiek atverts (Menu 8)
+			4. Tiek atverts (Menu 9)
+		FALSE: 
+			Ievade jaatkarto, kamer ieklaujas diapzona	
+			
+7. - MENU //SEARCH BY COUNTRY 
+	7.1. Pieprasa ievadit valsts nosaukumu
+	7.2. Parbauda vai ievaditais valsts nosaukums ir vienads ar kadu datubaze
+			TRUE:
+				7.2.1. Tiek izvaditas visas viesnicas kas ir ar tadiem valsts nosaukumiem
+				7.2.2. Jaievada numurs, kuru izvelejies, un tiks atverts (Menu 10)
+			FALSE:
+				7.2.3. Izvada 'Viesnica tada valsti nav atrasta'
+				7.2.4. Atver (Menu 5)
+				
+8. - MENU //SEARCH BY ZVAIGZNU SKAITS 
+	8.1. Pieprasa ievadit zvaigznu skaitu
+	8.2. Parbauda vai ievaditais zvaignu skaits ir vienads ar kadu datubaze
+			TRUE:
+				8.2.1. Tiek izvaditas visas viesnicas kas ir ar tadu zvaigznu skaitu 
+				8.2.2. Jaievada numurs, kuru izvelejies, un tiks atverts (Menu 10)
+			FALSE:
+				8.2.3. Izvada 'Viesnica ar tik zvaigznem nav atrasta'
+				8.2.4. Atver (Menu 5)
+				
+9. - MENU //SEARCH BY BRIVIE DATUMI
+	9.1. Pieprasa ievadit brivos datumus
+	9.2. Parbauda vai ievaditais brivais datums ir vienads ar kadu datubaze
+			TRUE:
+				9.2.1. Tiek izvaditas visas viesnicas kas ir brivas tados datumos 
+				9.2.2. Jaievada numurs, kuru izvelejies, un tiks atverts (Menu 10)
+			FALSE:
+				9.2.3. Izvada 'valsts nav atrasta ar tadu nosaukumu'
+				9.2.4. Atver (Menu 5)
+				
+10. - MENU //SEARCH BY VIESNICAS NOSAUKUMS
+	10.1. Pieprasa ievadit viesnicas nosaukumu
+	10.2. Parbauda vai ievaditais viesnicas nosaukmus ir vienads ar kadu datubaze
+			TRUE:
+				10.2.1. Tiek izvaditas visas viesnicas kas ir ar tadu nosaukumu
+				10.2.2. Jaievada numurs, kuru izvelejies, un tiks atverts (Menu 11)
+			FALSE:
+				10.2.3. Izvada 'Viesnica ar tadu nosaukumu nav atrasta'
+				10.2.4. Atver (Menu 5)
+
+11. - MENU // USER FOUND HOTEL, UN IZVELAS ISTABINAS KLASI
+	11.1. Tiek piedavat izvele (standarta,vip,lukss)
+	11.2. Jaievada izvele 
+	11.3. Parbauda vai izvele sakrit ar diapzonu [1-3]
+		TRUE:
+			1/2/3. Izvada tekstu "Vai velaties rezervet?"
+				Parbaude vai ievadija Y 
+					TRUE:
+						*Turpina darbibu
+					FALSE:
+						Parbauda vai ievadija N
+							TRUE:
+								*Tiek atverts (Menu 5)
+							FALSE:
+								*Pieprasa pa jaunu izveleties
+		FALSE:
+			*Pieprasa jaunu ievadi
+	11.4. *Rezerve isatbiju*
+	11.5. *Automatiski genere rezervacijas numuru*
+	11.6. Atveras (Menu 5)
+		
+
+12. - MENU // USER EDIT/COPY/CANCEL RESERVATION		
+	12.1. Tiek izvaditas visas esosas rezervacijas
+	12.2. Parbauda vai izvele sakrit ar diapzonu [1-UNLIMITED]
+		TRUE:
+			*turpina darbibu
+		FALSE:
+			*Pieprasa jaunu ievadi
+	12.2. Tiek piedavat izvele (labot,atcelt,drukat)
+	12.3. Jaievada izvele 
+	12.4. Parbauda vai izvele sakrit ar diapzonu [1-4]
+		TRUE:
+			1. Tiek piedavata izvele vai jauns rezervacijas datums vai pariet uz citu klasi
+				*Ja velas pariet uz Citu klasi tad tiek ievada jauno klasi un saglaba datubaze
+				*Ja izvelas mainit rezervacijas datumu tad ievada jauno rezervacijas datumu un saglabaa datubaze
+			2. Tiek izdrukata rezervacija tabula (html)
+			3. Tiek izdzesta rezervacija un atgriez naudu
+			4. Atver (Menu 5)
+		FALSE:
+			*Pieprasa jaunu ievadi
+			
+			
+			
+			
+			
+			
+			
